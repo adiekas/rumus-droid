@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KelilingPersegiActivity">
+
+    <include layout="@layout/toll_keliling_persegi"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:text="  4  :"-->
+            <!--android:id="@+id/TextView01"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--</TextView>-->
+
+        <!--<EditText-->
+            <!--android:text=""-->
+            <!--android:id="@+id/paten"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="numberSigned|numberDecimal">-->
+        <!--</EditText>-->
+
+        <TextView
+            android:text="Sisi :"
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <EditText
+            android:text=""
+            android:id="@+id/sisi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal">
+        </EditText>
+
+        <Button
+            android:text="Hitung Keliling"
+            android:id="@+id/btnHitung"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="hitungKeliling"
+            tools:ignore="OnClick">
+        </Button>
+
+        <TextView
+            android:text="Hasil Keliling :"
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+        <EditText
+            android:text=""
+            android:id="@+id/txtKeliling"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:editable="true"></EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

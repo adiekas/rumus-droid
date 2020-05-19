@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LuasBelahKetupatActivity">
+
+    <include layout="@layout/toll_belah_ketupat"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:text="Diagonal 1 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:text=""
+            android:id="@+id/diagonal1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"/>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:text="Diagonal 1 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:text=""
+            android:id="@+id/diagonal2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"/>
+
+        <Button
+            android:text="Hitung Luas"
+            android:id="@+id/btnHitung"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="hitungLuas"
+            tools:ignore="OnClick">
+        </Button>
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:text="Diagonal 1 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:text=""
+            android:id="@+id/txtLuas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"/>
+
+    </LinearLayout>
+
+</LinearLayout>
